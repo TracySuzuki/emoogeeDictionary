@@ -26,6 +26,17 @@ class EmoogeeTableViewController: UITableViewController {
         Emoogee(symbol: "🏁", name: "Checkered Flag", description: "A black-and-white checkered flag.", usage:"completion")]
     //an array of emoogees
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Uncomment the following line to preserve selection between presentations
+        //self.clearsSelectionOnViewWillAppear = false
+        
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
             return 1
             }
@@ -62,27 +73,47 @@ class EmoogeeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-        let moveEmoogee = emoogees.remove(at: fromIndexPath.row)
-        emoogees.insert(moveEmoogee, at: to.row)
+        let movedEmoogee = emoogees.remove(at: fromIndexPath.row)
+        emoogees.insert(movedEmoogee, at: to.row)
         tableView.reloadData()
+        //when called it should remove the data within emoogeees at fromIndexPath.row and add it back to .row:
     }
     
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .none
-        
+        //removes the delete indicator
+
     }
 
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
+        //forces a refresh of the tableView
     }
 
+
+
     @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
-    let tableViewEditingMode = tableView.isEditing
+        let tableViewEditingMode = tableView.isEditing
         tableView.setEditing(!tableViewEditingMode, animated: true)
-}
 
-
-
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
 
 
 
