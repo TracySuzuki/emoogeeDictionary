@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FDB94A0122419EC3008B3884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB94A0022419EC3008B3884 /* AppDelegate.swift */; };
-		FDB94A0322419EC3008B3884 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB94A0222419EC3008B3884 /* ViewController.swift */; };
 		FDB94A0622419EC3008B3884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB94A0422419EC3008B3884 /* Main.storyboard */; };
 		FDB94A0822419EC5008B3884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB94A0722419EC5008B3884 /* Assets.xcassets */; };
 		FDB94A0B22419EC5008B3884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB94A0922419EC5008B3884 /* LaunchScreen.storyboard */; };
+		FDB94A1322419F80008B3884 /* Emoogee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB94A1222419F80008B3884 /* Emoogee.swift */; };
+		FDB94A152241A6FD008B3884 /* EmoogeeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB94A142241A6FD008B3884 /* EmoogeeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FDB949FD22419EC3008B3884 /* emoogeeDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emoogeeDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB94A0022419EC3008B3884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDB94A0222419EC3008B3884 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDB94A0522419EC3008B3884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDB94A0722419EC5008B3884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB94A0A22419EC5008B3884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB94A0C22419EC5008B3884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB94A1222419F80008B3884 /* Emoogee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoogee.swift; sourceTree = "<group>"; };
+		FDB94A142241A6FD008B3884 /* EmoogeeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoogeeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				FDB94A0022419EC3008B3884 /* AppDelegate.swift */,
-				FDB94A0222419EC3008B3884 /* ViewController.swift */,
+				FDB94A1222419F80008B3884 /* Emoogee.swift */,
+				FDB94A142241A6FD008B3884 /* EmoogeeTableViewController.swift */,
 				FDB94A0422419EC3008B3884 /* Main.storyboard */,
 				FDB94A0722419EC5008B3884 /* Assets.xcassets */,
 				FDB94A0922419EC5008B3884 /* LaunchScreen.storyboard */,
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB94A0322419EC3008B3884 /* ViewController.swift in Sources */,
 				FDB94A0122419EC3008B3884 /* AppDelegate.swift in Sources */,
+				FDB94A1322419F80008B3884 /* Emoogee.swift in Sources */,
+				FDB94A152241A6FD008B3884 /* EmoogeeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
